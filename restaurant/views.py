@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+
 # from .models import Menu
 
 # Create your views here.
@@ -9,3 +11,6 @@ from django.shortcuts import render
 #   return render(request, "menu.html", {"menu": main_data})
 
 # the stuff above is used to show what html is loaded in for each view
+
+def index(request):
+    return render(request, "index.html", {})
